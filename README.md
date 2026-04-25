@@ -49,7 +49,7 @@ project/
 
 *INSTALLATION*
 1. First and foremost clone the repository onto your system to run on your desired IDE
-Command- git clone <your-repo-link> 
+Command- git clone <https://github.com/mansha5/hybrid_movie_recommendation_system.git> 
 
 2. Change the directory to your project 
 Command- cd project 
