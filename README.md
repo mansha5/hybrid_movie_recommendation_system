@@ -1,7 +1,7 @@
 
 Hybrid Movie Recommendation System
 
-##OVERVIEW
+*OVERVIEW*
 This project demonstrates an end-to-end hybrid recommendation system combining content-based and collaborative filtering techniques, evaluated using Precision@K.
 
 *ABOUT THE DATASET*
