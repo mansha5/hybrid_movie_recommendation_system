@@ -5,7 +5,7 @@ Hybrid Movie Recommendation System
 
 ##OVERVIEW
 
->>>>>>> b651443 (Improve README with clean structure and better documentation)
+
 This project demonstrates an end-to-end hybrid recommendation system combining content-based and collaborative filtering techniques, evaluated using Precision@K.
 
 ---
@@ -21,78 +21,81 @@ Files used: movies.csv(movieId,title,genres), ratings.csv(userId,movieId,rating,
 
 ##PREREQUISITES
 
--Git
--Python 3.13.5
+-Git <br>
+-Python 3.13.5 <br>
 -VSCode
 
 ---
 
 ##ARCHITECTURE
-1. Content-Based Filtering
--Uses movie genres + titles
--Converts text → TF-IDF vectors
+1. Content-Based Filtering <br>
+-Uses movie genres + titles <br>
+-Converts text → TF-IDF vectors <br>
 -Computes similarity using cosine similarity
 
-2. Collaborative Filtering
--Uses user rating patterns
--Finds similar users / preferences
+2. Collaborative Filtering <br>
+-Uses user rating patterns <br>
+-Finds similar users / preferences 
 
-3. Hybrid Model
--Combines both approaches:
+3. Hybrid Model <br>
+-Combines both approaches: <br>
 Hybrid Score = α × Collaborative + (1 - α) × Content
 
 ---
 
 ##PROJECT STRUCTURE
 
-project/ 
-│ 
-├── data/ 
-│  ├── movies.csv 
-│  ├── ratings.csv 
-│ 
-├── src/ 
-│   ├── preprocess.py 
-│   ├── content_based.py 
-│   ├── collaborative.py 
-│   ├── hybrid.py 
-│   
-├── main.py # Run system 
-├── requirements.txt 
-└── README.md
+project/ <br>
+│<br>
+├── data/ <br>
+│  ├── movies.csv <br>
+│  ├── ratings.csv <br>
+│ <br>
+├── src/ <br>
+│   ├── preprocess.py <br>
+│   ├── content_based.py <br>
+│   ├── collaborative.py <br>
+│   ├── hybrid.py <br>
+│   <br>
+├── main.py # Run system <br>
+├── requirements.txt <br>
+└── README.md<br>
 
 ---
 
 ##INSTALLATION
 
 1. First and foremost clone the repository onto your system to run on your desired IDE
-Command- git clone <https://github.com/mansha5/hybrid_movie_recommendation_system.git> 
 
-2. Change the directory to your project 
+    ```
+   git clone <https://github.com/mansha5/hybrid_movie_recommendation_system.git>
+    ```
+
+3. Change the directory to your project 
 
     ```
     cd project 
     ```
 
-3. Create a virtual environment so that python can run smoothly
+4. Create a virtual environment so that python can run smoothly
 
     ```
     python3 -m venv venv 
     ```
 
-4. Activate your virtual environment 
+5. Activate your virtual environment 
 
     ```
     source venv/bin/activate 
     ```
 
-5. Download the required libraries 
+6. Download the required libraries 
 
     ```
     pip install -r requirements.txt
     ```
 
-6. Run the Project
+7. Run the Project
 
     ```
     python main.py
@@ -100,29 +103,38 @@ Command- git clone <https://github.com/mansha5/hybrid_movie_recommendation_syste
 
 ---
 
-##EVALUATION
-Metric: Precision@10
-Current Score: ~0.002
+##EVALUATION <br>
+Metric: Precision@10 <br>
+Current Score: ~0.002 <br>
 
-Why low?
--Limited features (only genres + titles)
--Sparse dataset (MovieLens small)
--Strict evaluation setup
+Why low? <br>
+-Limited features (only genres + titles)<br>
+-Sparse dataset (MovieLens small)<br>
+-Strict evaluation setup<br>
 -The system is implemented as a learning project to demonstrate recommendation system architecture.
 
 ---
 
-##LIMITATIONS
--Cold start problem
--Limited feature representation
+##LIMITATIONS<br>
+-Cold start problem<br>
+-Limited feature representation<br>
 -Low precision due to dataset constraints
 
 ---
 
-##FUTURE IMPROVEMENTS
--Add tags.csv for better features
--Use NLP embeddings (BERT / Sentence Transformers)
+##FUTURE IMPROVEMENTS<br>
+-Add tags.csv for better features<br>
+-Use NLP embeddings (BERT / Sentence Transformers)<br>
 -Improve hybrid weighting
 
 ---
+
+##AUTHOR <br>
+
+Mansha Malhotra<br>
+
+
+
+
+
 
